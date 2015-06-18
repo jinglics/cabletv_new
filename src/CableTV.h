@@ -1,18 +1,3 @@
-/*
- * CableTV.h
- *
- *  Created on: Jun 18, 2015
- *      Author: administrator
- */
-
-#ifndef CABLETV_H_
-#define CABLETV_H_
-
-
-
-
-#endif /* CABLETV_H_ */
-
 #include <string>
 #include <vector>
 #include <map>

@@ -7,28 +7,30 @@
 int main() {
   NewsSubscriber sub;
   // test NewsSubscriber
+  std::cout  << "test NewsSubscriber\n\n";
   sub.set_subscriber_name("one");
-//  std::cout << sub.get_subscriber_name() << std::endl;
+  std::cout << sub.get_subscriber_name() << std::endl;
 
   sub.add_channel("x");
   sub.add_channel("y");
   sub.add_channel("z");
-//  std::set <std::string> ch=sub.get_channels_names();
-//  std::set<std::string>::iterator it;
-//  for (it = ch.begin(); it != ch.end(); it++) {
-//        std::cout << *it << '\n';
-//    }
+  std::set <std::string> ch=sub.get_channels_names();
+  std::set<std::string>::iterator it;
+  for (it = ch.begin(); it != ch.end(); it++) {
+        std::cout << *it << '\n';
+  }
 
+  std::cout  << "test cabletv\n\n";
   //test cabletv
 
   CableTV cable(&sub);
-
   cable.Subscribe("one", "tx");
   cable.display();
 
 //  NewsSubscriber sub2;
 //  sub2.set_subscriber_name("two");
 //  cable.add_Subscriber(&sub2);
+
 
   cable.Subscribe("two", "x");
   cable.display();
