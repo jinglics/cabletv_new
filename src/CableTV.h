@@ -23,6 +23,7 @@ public:
 		cabletv.push_back(sub);
 
 	}
+
 	void Subscribe(std::string subscriber_name, std::string channel_name) {
 		bool exist=false;
 		for(int i=0; i<cabletv.size(); i++){
